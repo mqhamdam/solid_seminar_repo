@@ -6,8 +6,8 @@ import '../../core/interfaces/i_soundable.dart';
 /* Interfaces Segragated by specific behaviors */
 class Sparrow extends Bird implements IFlyable, ISoundable {
   Sparrow({
-    required final String keyID,
-  }) : super('Sparrow', keyID: keyID);
+    required super.keyID,
+  }) : super('Sparrow');
 
   @override
   void fly() {
